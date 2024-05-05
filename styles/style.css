@@ -356,19 +356,13 @@ label{
     }
 }
 
-@media screen and (max-width:992px){
-    .container{
-        max-width: 800px;
-    }
-}
-
-@media screen and (max-width:800px){
+@media screen and (max-width:992px) {
     .container{
         max-width: 768px;
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .container{
         max-width: 576px;
     }
