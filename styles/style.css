@@ -78,10 +78,10 @@ nav ul{
 
 .section .section__container{
     position:relative ;
-    max-width: 1600px;
+    max-width: 1520px;
     background-image: url(../images/tv.cabinet.png);
     /* width: 100%; */
-    width: 1600px;
+    width: 1520px;
     height: 687px;
 }
 
@@ -345,36 +345,32 @@ label{
     display: none;
 }
 
-/* .container{
-    max-width: 1200px;
-} */
 
-
-@media  screen and (max-width:1600px) {
+@media  screen and (max-width:1520px){
     .container{
         max-width: 1200px;
     }
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1200px){
     .container{
         max-width: 992px;
     }
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:992px){
     .container{
         max-width: 768px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:768px){
     .container{
         max-width: 576px;
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px){
     .container{
         max-width: 320px;
     }
