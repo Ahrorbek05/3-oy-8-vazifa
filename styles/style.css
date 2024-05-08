@@ -14,12 +14,18 @@
 header{
     background-color: #fff;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0px;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 .header__container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 nav ul{
@@ -34,7 +40,11 @@ nav ul{
     line-height: 16px;
     text-align: left;
     color: rgba(40, 43, 34, 1);
-    }
+}
+
+.section{
+    margin-top: 98px;
+}
 
 .nav li{
     list-style: none;
@@ -216,6 +226,7 @@ nav ul{
 
 .section-two__container{
     margin-bottom: 100px;
+    /* margin-left: 200px; */
 }
 
 .section-two__container .carts{
@@ -255,7 +266,6 @@ nav ul{
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    /* border-radius: 10px; */
 }
 
 
@@ -282,7 +292,6 @@ nav ul{
 /* menu animated */
 
 .nav * {
-  /* box-sizing: border-box; */
   transition: all .35s ease;
 }
 
@@ -335,7 +344,7 @@ nav ul{
 }
  
 
-/* nav responsive */
+/* responsive */
 
 #check:checked{
     display: none;
@@ -345,33 +354,147 @@ label{
     display: none;
 }
 
+.equipment-part{
+    background-color: rgba(61, 74, 57, 1);
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+}
 
-@media  screen and (max-width:1520px){
+.equipment-part h2{
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 57.5px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.equipment__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.equipment__container p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.furniture img{
+    margin-left: 20px;
+    width: 66px;
+    height: 66px;
+}
+
+.part-one{
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.part-one .lamp{
+    margin-left: 285px;
+}
+
+.part-one .gas-stove{
+    margin-left: 214px;
+}
+
+.part-two{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 130px;
+}
+
+.part-two .floor{
+    margin-left: 221px;
+}
+
+.part-two .brainstorm{
+    margin-left: 178px;
+}
+
+.lamp img{
+    margin-left: 45px;
+}
+
+.gas-stove img{
+    margin-left: 78px;
+}
+
+.door img{
+    margin-left: 20px;
+}
+
+.floor img{
+    margin-left: 100px;
+}
+
+.brainstorm img{
+    margin-left: 55px;
+}
+
+@media  screen and (max-width:1200px) {
     .container{
-        max-width: 1200px;
+        max-width: 1000px;
+    }
+
+    .section__container{
+        max-width: 1000px;
     }
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:992px) {
     .container{
-        max-width: 992px;
+        max-width: 800px;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    .accounts-call img{
+        gap: 7px;
     }
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:768px) {
     .container{
-        max-width: 768px;
+        max-width: 640px;
     }
-}
 
-@media screen and (max-width:768px){
-    .container{
-        max-width: 576px;
+    .section__container h1{
+        left: 450px;
     }
-}
 
-@media screen and (max-width:576px){
-    .container{
-        max-width: 320px;
+    .section__container p{
+        left: 375px;
+    }
+
+    .section__container .hero-btns{
+        left: 500px;
+    }
+
+    .section .btns-span{
+        margin-left: 700px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    hr{
+        max-width: 950px;
+    }
+
+    label{
+        display: block;
     }
 }
